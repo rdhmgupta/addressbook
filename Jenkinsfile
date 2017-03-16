@@ -29,7 +29,7 @@ node {
       }
    }
 stage('Publish reports') {
-    publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '**/addressbook_main/target/surefire-reports', reportFiles: 'index.html', reportName: 'HTML Report'])
+    publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '**//addressbook_main/target/surefire-reports/', reportFiles: 'index.html', reportName: 'HTML Report'])
    }   
   
 } 
