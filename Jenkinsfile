@@ -28,6 +28,9 @@ node {
          bat(/"${mvnHome}\bin\mvn" -Dmaven.test.failure.ignore clean package/)
       }
    }
-   
+stage('Publish reports') {
+      publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '**/addressbook_main/target/surefire/*.html', reportFiles: 'index.html', reportName: 'HTML Report'])
+
+   }   
   
 } 
