@@ -25,6 +25,11 @@
     <id>release_qa</id>
     <url>http://ec2-52-14-201-12.us-east-2.compute.amazonaws.com:8080/nexus/content/repositories/release_qa</url>
   </repository>
+
+  <snapshotRepository>
+    <id>snapshots</id>
+    <url>http://ec2-52-14-201-12.us-east-2.compute.amazonaws.com:8080/nexus/content/repositories/snapshots</url>
+  </snapshotRepository>
 </distributionManagement>
 	
     <pluginRepositories>
