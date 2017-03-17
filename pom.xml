@@ -22,13 +22,13 @@
 
 <distributionManagement>
   <repository>
-    <id>release_qa</id>
-    <url>http://ec2-52-14-201-12.us-east-2.compute.amazonaws.com:8080/nexus/content/repositories/release_qa</url>
+    <id>${env.REL_ART_ID}</id>
+    <url>${env.REL_ART_URL}</url>
   </repository>
 
   <snapshotRepository>
-    <id>snapshots</id>
-    <url>http://ec2-52-14-201-12.us-east-2.compute.amazonaws.com:8080/nexus/content/repositories/snapshots</url>
+    <id>${env.ART_ID}</id>
+    <url>${env.ART_URL}</url>
   </snapshotRepository>
 </distributionManagement>
 	
